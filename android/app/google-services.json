@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "272441635093",
+    "project_id": "mis-lab2-2024",
+    "storage_bucket": "mis-lab2-2024.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272441635093:android:d9325bedfd7be2fab2f91c",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1_A2ZVuTlu_BeEETzb-Tjy6odPLevJAg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272441635093:android:67405a023155bdffb2f91c",
+        "android_client_info": {
+          "package_name": "com.example.lab2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1_A2ZVuTlu_BeEETzb-Tjy6odPLevJAg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import '../services/api_services.dart';
+import '../models/joke_model.dart';
 import '../widgets/home/joke_type_card.dart';
+import 'favorite_jokes.dart';
+import 'random_joke.dart';
+import '../providers/favorite_jokes_provider.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -10,9 +15,27 @@ class HomeScreen extends StatelessWidget {
         title: Text('Joke Types'),
         actions: [
           IconButton(
-            icon: Icon(Icons.star),
+            icon: Icon(Icons.favorite),
             onPressed: () {
-              Navigator.pushNamed(context, '/random-joke');
+              // Access favorite jokes from the provider
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => FavoriteJokesScreen(),
+                ),
+              );
+            },
+          ),
+          IconButton(
+            icon: Icon(Icons.shuffle),
+            onPressed: () {
+              // Navigate to RandomJokeScreen
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => RandomJokeScreen(),
+                ),
+              );
             },
           ),
         ],
